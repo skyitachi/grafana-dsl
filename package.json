@@ -1,6 +1,6 @@
 {
   "name": "@dwd/grafana-dsl",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A DSL for programmatically generating Grafana dashboard JSON.",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,10 @@
   "author": "yaoshiping <yaoshiping@dianwoba.com>",
   "license": "MIT",
   "keywords": [
-    "grafana", "grafana dashboard", "grafana dashboard json", "grafana json"
+    "grafana",
+    "grafana dashboard",
+    "grafana dashboard json",
+    "grafana json"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -26,4 +29,3 @@
     ]
   }
 }
-
