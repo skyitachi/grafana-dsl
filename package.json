@@ -1,5 +1,5 @@
 {
-  "name": "@dwd/grafana-dsl",
+  "name": "grafana-dsl",
   "version": "1.0.16",
   "description": "A DSL for programmatically generating Grafana dashboard JSON.",
   "main": "lib/index.js",
@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register test/**/*.test.js",
     "prepare": "npm run build"
   },
-  "author": "yaoshiping <yaoshiping@dianwoba.com>",
+  "author": "skyitachi <skbysp@gmail.com>",
   "license": "MIT",
   "keywords": [
     "grafana",
