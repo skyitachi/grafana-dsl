@@ -253,15 +253,53 @@ function target(defaults = {}) {
     intervalFactor: 2,
     expr: '',
     legendFormat: '',
+    policy: 'default',
+    dsType: 'influxdb',
+    resultFormat: 'time_series',
+    tags: [],
+    groupBy: [],
+    select: [[]]
   };
 
   return {
+    alias(val) {
+      settings.alias = val;
+      return this;
+    },
     expr(val) {
       settings.expr = val;
       return this;
     },
     legendFormat(val) {
       settings.legendFormat = val;
+      return this;
+    },
+    measurement(val) {
+      settings.measurement = val;
+      return this;
+    },
+    dsType(val) {
+      settings.dsType = val;
+      return this;
+    },
+    policy(val) {
+      settings.policy = val;
+      return this;
+    },
+    resultForat(val) {
+      settings.resultFormat = val;
+      return this;
+    },
+    tag(val) { // operator 默认'='
+      settings.tags.push(Object.assign({operator: '='}, val));
+      return this;
+    },
+    groupBy(val) {
+      settings.groupBy.push(Object.assign({}, val));
+      return this;
+    },
+    select(val) {
+      settings.select[0].push(Object.assign({}, val));
       return this;
     },
     serialize(index) {
@@ -360,6 +398,10 @@ function graphPanel(defaults = {}) {
     },
     fill(val=1) {
       settings.fill = val;
+      return this;
+    },
+    type(val) {
+      settings.type = val;
       return this;
     },
     serialize(id) {

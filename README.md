@@ -1,3 +1,6 @@
+# Claims
+**This Project is forked from [Grafana-dsl](https://github.com/NoumanSaleem/grafana-dsl)**
+
 # Grafana-DSL
 
 A DSL for programmatically generating [Grafana](http://grafana.org/) dashboards. Currently, this module does not interface with Grafana's API. Instead, write the configurations to disk and configure Grafana to load the dashboards.
@@ -176,3 +179,4 @@ Configure an alert condition.
 
 ### Contributors
 - [Nouman Saleem](https://github.com/noumanSaleem)
+- [skyitachi](https://github.com/skyitachi)

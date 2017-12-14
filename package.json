@@ -1,5 +1,5 @@
 {
-  "name": "yoa-grafana-dsl",
+  "name": "@dwd/grafana-dsl",
   "version": "1.0.15",
   "description": "A DSL for programmatically generating Grafana dashboard JSON.",
   "main": "lib/index.js",
@@ -8,16 +8,8 @@
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register test/**/*.test.js",
     "prepublish": "npm run build"
   },
-  "author": "Nouman Saleem",
-  "license": "ISC",
-  "homepage": "https://github.com/NoumanSaleem/grafana-dsl#readme",
-  "bugs": {
-    "url": "https://github.com/NoumanSaleem/grafana-dsl/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/NoumanSaleem/grafana-dsl.git"
-  },
+  "author": "skyitachi <skbysp@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "grafana", "grafana dashboard", "grafana dashboard json", "grafana json"
   ],
@@ -34,3 +26,4 @@
     ]
   }
 }
+
