@@ -8,7 +8,7 @@
     "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register test/**/*.test.js",
     "prepublish": "npm run build"
   },
-  "author": "skyitachi <skbysp@gmail.com>",
+  "author": "yaoshiping <yaoshiping@dianwoba.com>",
   "license": "MIT",
   "keywords": [
     "grafana", "grafana dashboard", "grafana dashboard json", "grafana json"
